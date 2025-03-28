@@ -18,7 +18,12 @@ fi
 day=$(date +%w)
 
 if [ "$day" = "0" ] || [ "$day" = "6" ]; then
-    echo "It's the weekend! "
+    echo "It's the weekend!"
 else
-    echo "It's not the weekend yet "
+    echo "It's not the weekend yet"
+fi
+if [ "$day_of_week" == "Saturday" ] || [ "$day_of_week" == "Sunday" ]; then
+    echo "It's the weekend! yay!! "
+else
+    echo "It's not the weekend yet.keep going!!"
 fi
